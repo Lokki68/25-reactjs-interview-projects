@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import './styles.css'
+import styles from './styles.module.css'
 export default function RandomColor(props) {
 
   const [typeOfColor, setTypeOfColor] = useState('hex')
@@ -40,14 +40,14 @@ export default function RandomColor(props) {
           style={{
             backgroundColor: color
           }}
-          className='container'
+          className={styles.container}
       >
         <button onClick={() => setTypeOfColor('hex')} >Create HEX Color</button >
         <button onClick={() => setTypeOfColor('rgb')} >Create RGB Color</button >
         <button
             onClick={handleCreateRandomColor}
         >Generate Random Color</button >
-        <div className='resultContainer'>
+        <div className={styles.resultContainer}>
           <h3>
             {typeOfColor === 'rgb' ? 'RGB' : 'HEX'} Color
           </h3>
