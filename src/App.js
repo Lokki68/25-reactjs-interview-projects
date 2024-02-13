@@ -8,6 +8,7 @@ import TreeView from "./components/tree-view";
 import menus from "./components/tree-view/data";
 import QrCodeGenerator from "./components/qr-code-generator";
 import LightDarkMode from "./components/light-dark-mode";
+import ScrollIndicator from "./components/scroll-indicator";
 
 
 function App() {
@@ -26,16 +27,18 @@ function App() {
       {/*<ImageSlider url='https://picsum.photos/v2/list'/>*/}
 
       {/* Load More Data component */}
-      {/*<LoadMoreData/>*/}
 
       {/* Tree View component */}
       {/*<TreeView menus={menus}/>*/}
 
       {/* Qr Code Generator component */}
-      {/*<QrCodeGenerator/>*/}
+      <QrCodeGenerator/>
 
       {/* Light Dark Mode component */}
-      <LightDarkMode/>
+      {/*<LightDarkMode/>*/}
+
+      {/* Scroll Indicator component */}
+      <ScrollIndicator url='https://dummyjson.com/products?limit=100' />
     </div>
   );
 }
