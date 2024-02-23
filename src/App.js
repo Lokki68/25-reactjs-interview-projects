@@ -12,6 +12,7 @@ import ScrollIndicator from "./components/scroll-indicator";
 import { TabTest } from "./components/custom-tabs/tab-test";
 import { ModalTest } from "./components/custom-modal/modal-test";
 import GithubSearch from "./components/github-search";
+import SearchAutocomplete from "./components/search-autocomplet";
 
 
 function App() {
@@ -50,7 +51,10 @@ function App() {
       {/* <ModalTest /> */}
 
       {/* Github Search component */}
-      <GithubSearch />
+      {/* <GithubSearch /> */}
+
+      {/* Search Autocomplet component */}
+      <SearchAutocomplete />
 
     </div>
   );
