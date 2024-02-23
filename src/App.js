@@ -13,6 +13,7 @@ import { TabTest } from "./components/custom-tabs/tab-test";
 import { ModalTest } from "./components/custom-modal/modal-test";
 import GithubSearch from "./components/github-search";
 import SearchAutocomplete from "./components/search-autocomplet";
+import TicTacToe from "./components/tic-tac-toe";
 
 
 function App() {
@@ -54,7 +55,10 @@ function App() {
       {/* <GithubSearch /> */}
 
       {/* Search Autocomplet component */}
-      <SearchAutocomplete />
+      {/*<SearchAutocomplete />*/}
+
+      {/* Tic Tac Toe component */}
+      <TicTacToe />
 
     </div>
   );
